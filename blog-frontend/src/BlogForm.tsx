@@ -17,7 +17,7 @@ const BlogForm: React.FC<BlogFormProps> = ({ setGeneratedContent, isLoading, set
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/generate-blog/', {
+      const response = await axios.post('https://blog-ai.onrender.com/generate-blog', {
         title,
         prompt,
       });
